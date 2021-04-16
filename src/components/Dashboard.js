@@ -11,15 +11,31 @@ const Dashboard = () => {
   if (error) console.log(error)
 
   return (
-    <>
-      <h1>Dashboard</h1>
-      <section>
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
+    <section className='dashboard'>
+      {/* <View /> */}
+      <section className='broker-section'>
+        <h2>Broker Book</h2>
+        <article>
+          <h3>Premium Range</h3>
+          <InfoCard data={data.mostRecentSnapshot.brokerSlice.premiumRange}/>
+        </article>
+        <article>
+          <h3>Industries</h3>
+          <InfoCard data={data.mostRecentSnapshot.brokerSlice.industries}/>
+        </article>
       </section>
-    </>
+      <section className='carrier-section'>
+        <h2>Carrier Placement</h2>
+        <article>
+          <h3>Premium Range</h3>
+          <InfoCard data={data.mostRecentSnapshot.carrierSlice.premiumRange}/>
+        </article>
+        <article>
+          <h3>Industries</h3>
+          <InfoCard data={data.mostRecentSnapshot.carrierSlice.industries}/>
+        </article>
+      </section>
+    </section>
   )
 }
 
