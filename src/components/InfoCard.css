@@ -11,6 +11,15 @@
   padding-top: 3rem;
 }
 
+.premium-wrapper p {
+  color: #515A5A;
+  font-family: Montserrat;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 10px;
+  text-align: center;
+}
+
 .premium {
   margin: 0
 }
