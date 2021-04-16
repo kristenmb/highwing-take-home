@@ -23,10 +23,10 @@ const InfoCard = ({ data }) => {
     datasets: [{
       data: dataPoints,
       backgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56',
-      '#04e932'
+      '#003D40',
+      '#00CE5F',
+      '#00E834',
+      '#00E9CB'
       ]
     }]
   }
