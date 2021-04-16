@@ -52,8 +52,8 @@ const InfoCard = ({ data }) => {
                 {
                   text: `${percent}`,
                   font: {
-                    family: 'Roboto, sans-serif',
-                    size: '30',
+                    family: 'Barlow, sans-serif',
+                    size: '48',
                   }
                 }],
                 color: 'black',
@@ -61,9 +61,7 @@ const InfoCard = ({ data }) => {
               }
             }
         }}
-        // width={200}
       />
-      {/* <span className='percentage'>{percent}</span> */}
       <div className='premium-wrapper'>
         <p className='premium'>{premium}</p>
         <p>Total Premiums</p>
