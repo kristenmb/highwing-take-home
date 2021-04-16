@@ -1,5 +1,6 @@
 import React from 'react'
 import InfoCard from './InfoCard'
+import View from './View'
 import { useQuery } from '@apollo/client'
 import { BROKER_CARRIER_SLICE_QUERY } from '../queries'
 import './Dashboard.css'
@@ -13,8 +14,8 @@ const Dashboard = () => {
 
   return (
     <>
+      <View />
       <section className='dashboard'>
-        {/* <View /> */}
         <section className='broker-section'>
           <h2>Broker Book</h2>
           <article className='info-card pr-range'>

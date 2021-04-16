@@ -1,0 +1,24 @@
+.buttons {
+  width: 100%;
+  background-color: #eaeeef;
+  display: flex;
+}
+
+.btn {
+  margin: 2.5rem 0 0 2.5rem;
+  border: 1px solid #00E0C2;
+  border-radius: 6px;
+  background-color: #00E0C2;
+  color: #6D7777;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  line-height: 15px;
+  height: 2rem;
+}
+
+.btn:disabled {
+  border: 1px solid #979797;
+  background-color: transparent;
+}
