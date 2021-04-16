@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Doughnut, defaults } from 'react-chartjs-2'
+import { doughnutlabel } from 'chartjs-plugin-doughnutlabel'
 import './InfoCard.css'
 
 
@@ -42,11 +43,27 @@ const InfoCard = ({ data }) => {
         options={{
           cutoutPercentage: 80,
           legend: {
-                onClick: (e, item) => handleClick(e, item)
-          }
+            onClick: (e, item) => handleClick(e, item),
+            afterFit: () => this.width = this.width + 50
+          },
+          plugins: {
+            doughnutlabel: {
+              labels: [
+                {
+                  text: `${percent}`,
+                  font: {
+                    family: 'Roboto, sans-serif',
+                    size: '30',
+                  }
+                }],
+                color: 'black',
+                width: 90
+              }
+            }
         }}
+        // width={200}
       />
-      <span className='percentage'>{percent}</span>
+      {/* <span className='percentage'>{percent}</span> */}
       <div className='premium-wrapper'>
         <p className='premium'>{premium}</p>
         <p>Total Premiums</p>
