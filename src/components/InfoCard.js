@@ -15,7 +15,7 @@ const InfoCard = ({ data }) => {
 
   defaults.global.legend.position = 'left'
   defaults.global.legend.labels.usePointStyle = true
-  defaults.global.legend.title = 'TITLE'
+ 
 
   const chartData = {
     labels,
