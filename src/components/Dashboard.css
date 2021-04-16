@@ -1,0 +1,37 @@
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eaeeef;
+  width: 100%;
+ 
+}
+
+.broker-section,
+.carrier-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -1.11px;
+  line-height: 40px;
+}
+
+h3 {
+  align-self: end;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -1.11px;
+  line-height: 28px;
+}

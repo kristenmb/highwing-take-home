@@ -1,0 +1,29 @@
+.percentage {
+  position: relative;
+  bottom: 8.5rem;
+  left: 4.5rem;
+}
+
+.premium-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 3rem;
+}
+
+.premium-wrapper p {
+  color: #515A5A;
+  font-family: Montserrat;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 10px;
+  text-align: center;
+}
+
+.premium {
+  margin: 0
+}
+
+canvas {
+  padding-left: 6rem
+}
