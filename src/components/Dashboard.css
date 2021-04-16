@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeeef;
+  /* width: 75vw; */
+}
+
+.broker-section,
+.carrier-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin-bottom: 7rem; 
+}

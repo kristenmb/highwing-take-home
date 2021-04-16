@@ -25,7 +25,7 @@ const InfoCard = ({ data }) => {
       '#FF6384',
       '#36A2EB',
       '#FFCE56',
-      '#b3b3b3'
+      '#04e932'
       ]
     }]
   }
