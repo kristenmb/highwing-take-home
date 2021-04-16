@@ -12,31 +12,34 @@ const Dashboard = () => {
   if (error) console.log(error)
 
   return (
-    <section className='dashboard'>
-      {/* <View /> */}
-      <section className='broker-section'>
-        <h2>Broker Book</h2>
-        <article className='info-card'>
-          <h3>Premium Range</h3>
-          <InfoCard data={data.mostRecentSnapshot.brokerSlice.premiumRange}/>
-        </article>
-        <article className='info-card'>
-          <h3>Industries</h3>
-          <InfoCard data={data.mostRecentSnapshot.brokerSlice.industries}/>
-        </article>
+    <>
+      <section className='dashboard'>
+        {/* <View /> */}
+        <section className='broker-section'>
+          <h2>Broker Book</h2>
+          <article className='info-card pr-range'>
+            <h3>Premium Range</h3>
+            <InfoCard data={data.mostRecentSnapshot.brokerSlice.premiumRange}/>
+          </article>
+          <article className='info-card'>
+            <h3>Industries</h3>
+            <InfoCard data={data.mostRecentSnapshot.brokerSlice.industries}/>
+          </article>
+        </section>
+        <section className='carrier-section'>
+          <h2>Carrier Placement</h2>
+          <article className='info-card pr-range'>
+            <h3>Premium Range</h3>
+            <InfoCard data={data.mostRecentSnapshot.carrierSlice.premiumRange}/>
+          </article>
+          <article className='info-card'>
+            <h3>Industries</h3>
+            <InfoCard data={data.mostRecentSnapshot.carrierSlice.industries}/>
+          </article>
+        </section>
       </section>
-      <section className='carrier-section'>
-        <h2>Carrier Placement</h2>
-        <article className='info-card'>
-          <h3>Premium Range</h3>
-          <InfoCard data={data.mostRecentSnapshot.carrierSlice.premiumRange}/>
-        </article>
-        <article className='info-card'>
-          <h3>Industries</h3>
-          <InfoCard data={data.mostRecentSnapshot.carrierSlice.industries}/>
-        </article>
-      </section>
-    </section>
+      <div className='line'></div>
+    </>
   )
 }
 

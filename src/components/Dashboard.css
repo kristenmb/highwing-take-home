@@ -1,8 +1,9 @@
 .dashboard {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #eaeeef;
-  width: 90vw;
+  width: 100%;
+ 
 }
 
 .broker-section,
@@ -15,7 +16,28 @@
 .info-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 80%;
-  margin-bottom: 7rem; 
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -1.11px;
+  line-height: 40px;
+}
+h3 {
+  align-self: end;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -1.11px;
+  line-height: 28px;
+}
+
+.line {
+  border-bottom: 2px solid #C5CED0;
+  width: 100vw;
+  position: relative;
+  bottom: 420px;
 }
