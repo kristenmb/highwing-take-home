@@ -14,10 +14,10 @@ const Dashboard = () => {
     <>
       <h1>Dashboard</h1>
       <section>
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
+        <InfoCard data={data.mostRecentSnapshot.brokerSlice.premiumRange}/>
+        <InfoCard data={data.mostRecentSnapshot.brokerSlice.industries}/>
+        <InfoCard data={data.mostRecentSnapshot.carrierSlice.premiumRange}/>
+        <InfoCard data={data.mostRecentSnapshot.carrierSlice.industries}/>
       </section>
     </>
   )
