@@ -35,10 +35,3 @@ h3 {
   letter-spacing: -1.11px;
   line-height: 28px;
 }
-
-.line {
-  border-bottom: 2px solid #C5CED0;
-  width: 100vw;
-  position: relative;
-  bottom: 420px;
-}

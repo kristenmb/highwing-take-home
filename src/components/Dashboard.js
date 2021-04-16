@@ -39,7 +39,6 @@ const Dashboard = () => {
           </article>
         </section>
       </section>
-      <div className='line'></div>
     </>
   )
 }
