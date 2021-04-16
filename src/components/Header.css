@@ -5,7 +5,70 @@ header {
   width: 90vw;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -1.11px;
+  line-height: 40px;
+  margin-bottom: 2.5rem;
+}
+
 .website,
 .summary {
   display: flex;
+  height: 44px;
+  width: 570px;
+  color: #515A5A;
+  font-family: Barlow;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.top-nav {
+  display: flex;
+  width: 94vw;
+  justify-content: flex-end;
+}
+
+.name {
+  font-family: 'Montserrat', san-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15px;
+  text-align: right;
+  position: relative;
+  top: 13px;
+  right: 14px;
+}
+
+.name-short {
+  font-family: 'Montserrat',
+  san-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15px;
+  background-color: #00C7B1;
+  border-radius: 50%;
+  padding: .5em
+}
+
+.bell {
+  height: 3rem;
+  position: relative;
+  top: 9px;
+}
+
+.arrow {
+  position: relative;
+  right: 857px;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 2rem;
 }
