@@ -1,9 +1,19 @@
-import React from 'react'
-import { Doughnut } from 'react-chartjs-2'
+import React, { useState } from 'react'
+import { Doughnut, defaults } from 'react-chartjs-2'
+
+
+
 
 const InfoCard = ({ data }) => {
   const labels = data.map(item => item.title)
   const dataPoints = data.map(item => item.premium)
+  const percentages = data.map(item => item.proportion)
+  
+  const [ percent, setPercent ] = useState(`${percentages[0]}%`)
+  
+  defaults.global.legend.position = 'left'
+  defaults.global.legend.labels.usePointStyle = true
+  defaults.global.legend.title = 'TITLE'
 
   const chartData = {
     labels,
@@ -18,11 +28,23 @@ const InfoCard = ({ data }) => {
     }]
   }
 
+  const handleClick = (e, item) => {
+    console.log(item.index)
+    console.log(item)
+    setPercent(`${percentages[item.index]}%`)
+  }
+
   return (
     <div style={{height: '45vh', width: '45vw'}}>      
       <Doughnut
         data={chartData}
+        options={{
+            legend: {
+                onClick: (e, item) => handleClick(e, item)
+          }
+        }}
       />
+      <span className='percentage'>{percent}</span>
     </div>
   )
 }
