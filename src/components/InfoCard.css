@@ -1,0 +1,16 @@
+.percentage {
+  position: relative;
+  bottom: 8.5rem;
+  left: 4.5rem;
+}
+
+.premium-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 8rem;
+}
+
+.premium {
+  margin: 0
+}

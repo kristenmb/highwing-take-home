@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Doughnut, defaults } from 'react-chartjs-2'
-
+import './InfoCard.css'
 
 
 
@@ -36,18 +36,21 @@ const InfoCard = ({ data }) => {
   }
 
   return (
-    <div style={{height: '45vh', width: '45vw'}}>      
+    <div style={{height: '25vh', width: '35vw'}}>      
       <Doughnut
         data={chartData}
         options={{
-            legend: {
+          cutoutPercentage: 80,
+          legend: {
                 onClick: (e, item) => handleClick(e, item)
           }
         }}
       />
       <span className='percentage'>{percent}</span>
-      <span className='premium'>{premium} Total Premiums</span>
-
+      <div className='premium-wrapper'>
+        <p className='premium'>{premium}</p>
+        <p>Total Premiums</p>
+      </div>
     </div>
   )
 }
