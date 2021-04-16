@@ -1,0 +1,23 @@
+.pages {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw
+}
+
+.snapshot {
+  color: #00E0c2;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  border-bottom: 2pt solid #00e0c2;
+  padding: 0 1rem  1rem 1rem;
+  margin-bottom: 0;
+}
+
+.trends {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 0 1rem 1rem 1rem;
+  margin-bottom: 0;
+}
