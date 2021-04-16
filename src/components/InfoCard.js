@@ -7,8 +7,8 @@ import './InfoCard.css'
 
 const InfoCard = ({ data }) => {
   const labels = data.map(item => item.title)
-  const dataPoints = data.map(item => item.premium)
-  const percentages = data.map(item => item.proportion)
+  const dataPoints = data.map(item => item.premium.toFixed())
+  const percentages = data.map(item => item.proportion.toFixed())
 
 
   const [ percent, setPercent ] = useState(`${percentages[0]}%`)
