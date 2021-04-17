@@ -15,9 +15,11 @@ const Header = () => {
     <header>
       <div className='top-nav'>
         <img className='arrow' src={arrow} alt='Back arrow'/>
-        <p className='name'>Elwin Sharvill</p>
-        <p className='name-short'>ES</p>
-        <img className='bell' src={bell} alt='Notification bell'/>
+        <div className='right-top'>
+          <p className='name'>Elwin Sharvill</p>
+          <p className='name-short'>ES</p>
+          <img className='bell' src={bell} alt='Notification bell'/>
+        </div>
       </div>
       <h1>{data.mostRecentSnapshot.broker.name}</h1>
       <div className='website'>

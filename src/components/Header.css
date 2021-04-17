@@ -32,7 +32,7 @@ h1 {
 .top-nav {
   display: flex;
   width: 94vw;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .name {
@@ -63,12 +63,16 @@ h1 {
   top: 9px;
 }
 
-.arrow {
+/* .arrow {
   position: relative;
   right: 857px;
-}
+} */
 
 .label {
   font-weight: 600;
   margin-right: 2rem;
+}
+
+.right-top {
+  display: flex;
 }
