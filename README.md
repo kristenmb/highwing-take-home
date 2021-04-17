@@ -12,6 +12,12 @@ A comparision of coverage summaries. On the left, all businesses a selected brok
 [Built off of this comp](https://projects.invisionapp.com/share/RWXOGR6E7AT#/screens/421418913")
 
 
+## To View
+1. Clone or fork this repository to your local machine
+2. Run `npm install`
+3. Run `npm start`
+4. Visit `localhost:3000`
+
 ### Planning
 - After recieving the prompt, I read through the expectations, took notes and examined the comp. 
 - I created a few diagrams separating the comp into proposed components.
@@ -22,6 +28,7 @@ A comparision of coverage summaries. On the left, all businesses a selected brok
 - Next I wanted to be sure I could access the data from the provided API so I implemented Apollo Client and created my graphQL queries.
 - Once I had access to the data I worked on implementing the Chart.js library which I had never used with React before. I found the documentation difficult to follow as it hasn't been updated well for how the package works with React. 
 - After tackling most of the functionality I switched gears and worked to get the styling closer to the comp. 
+- I spent just over 5 hours on the challenge.
 
 ### Resources
 - [Apollo Client](https://www.apollographql.com/docs/)
@@ -37,14 +44,8 @@ A comparision of coverage summaries. On the left, all businesses a selected brok
 - CSS
 
 ## Future Iterations
-- There is one final piece of functionality that I did not complete. When clicking legend items the styling of the legend does not change. I had trouble finding the property that needed to be adjusted. I attempted to manipulate the className on click but didn't find any luck in that. 
-- There is an occassional warming that pops up in the console when too many refreshes occurf. It reffers to the memory caching from Apollo. I did some breif reading on the topic and learned that the memory is trying to resolve conflicts with the new data having conflicting information. There was a potential solution I saw that referred to implementing an id on each call but I did not have time to investigate that further.
-- Had I had time, I would have worked to separate some of the data maniputaion and "extra bits" into a utils file to clean up the components slightly - mostly in the InfoCard component with some of the peices used for the Doughnut data.
+- When clicking legend items the styling of the legend does not change. I had trouble finding the property that needed to be adjusted. I attempted to manipulate the className on click but didn’t find any luck in that. 
+- There is an occasional warning that pops up in the console when too many refreshes occur. It refers to the memory caching from Apollo. I did some brief reading on the topic and learned that the memory cache is trying to resolve conflicts with the new data having new information. There was a potential solution I found that referred to implementing an id on each call but I did not have time to investigate that further.
+- Had I had time, I would have worked to separate some of the data manipulation and “extra bits” into a utils file to clean up the components slightly - mostly in the InfoCard component with some of the pieces used for the Doughnut data.
 - I considered making a single graphQL query and grabbing all the data I needed, but I am new to graphQL and experimented a bit with the different calls. I think the separation made sense for how I built out the page, but could also have been done with a single query.
-- One final piece I struggled with for a while was getting the premiums to re-format as currency (with commas). I was able to make `new Intl.NumberFormat().format(number))` work in separate sandboxes but not within my code. I think I was close to sorting this out, but couldn't quite make it work. 
-
-## To View
-1. Clone or fork this repository to your local machine
-2. Run `npm install`
-3. Run `npm start`
-4. Visit `localhost:3000`
+- One final piece I struggled with for a while was getting the premiums to re-format as currency (with commas). I was able to make `new Intl.NumberFormat().format(number))` work in separate sandboxes but not within my code. I think I was close to sorting this out, but couldn’t quite make it work. 
