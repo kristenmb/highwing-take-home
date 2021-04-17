@@ -28,7 +28,7 @@ A comparision of coverage summaries. On the left, all businesses a selected brok
 - Next I wanted to be sure I could access the data from the provided API so I implemented Apollo Client and created my graphQL queries.
 - Once I had access to the data I worked on implementing the Chart.js library which I had never used with React before. I found the documentation difficult to follow as it hasn't been updated well for how the package works with React. 
 - After tackling most of the functionality I switched gears and worked to get the styling closer to the comp. 
-- I spent just over 5 hours on the challenge.
+- I spent ~5 hours on the challenge.
 
 ### Resources
 - [Apollo Client](https://www.apollographql.com/docs/)
