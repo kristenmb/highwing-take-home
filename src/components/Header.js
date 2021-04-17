@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <h1>{data.mostRecentSnapshot.broker.name}</h1>
       <div className='website'>
-        <p className='label'>Website:</p>
+        <p className='label label-web'>Website:</p>
         <p>broker@example.com</p>
       </div>
       <div className='summary'>

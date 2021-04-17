@@ -16,10 +16,10 @@ h1 {
 .website,
 .summary {
   display: flex;
-  height: 44px;
+  height: 20px;
   width: 570px;
   color: #515A5A;
-  font-family: Barlow;
+  font-family: 'Barlow', sans-serif;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 20px;
@@ -63,14 +63,13 @@ h1 {
   top: 9px;
 }
 
-/* .arrow {
-  position: relative;
-  right: 857px;
-} */
-
 .label {
   font-weight: 600;
   margin-right: 2rem;
+}
+
+.label-web {
+  margin-right: 2.5rem;
 }
 
 .right-top {
