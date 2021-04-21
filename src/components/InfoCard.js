@@ -7,9 +7,12 @@ const InfoCard = ({ data }) => {
   const labels = data.map(item => item.title)
   const dataPoints = data.map(item => item.premium.toFixed())
   const percentages = data.map(item => item.proportion.toFixed())
+  const premiums = dataPoints.map(point => {
+    return new Intl.NumberFormat().format(point)
+  })
 
   const [ percent, setPercent ] = useState(`${percentages[0]}%`)
-  const [ premium, setPremium ] = useState(`$${dataPoints[0]}`)
+  const [ premium, setPremium ] = useState(`$${premiums[0]}`)
 
   defaults.global.legend.position = 'left'
   defaults.global.legend.labels.usePointStyle = true
@@ -29,7 +32,7 @@ const InfoCard = ({ data }) => {
 
   const handleClick = (e, item) => {
     setPercent(`${percentages[item.index]}%`)
-    setPremium(`$${dataPoints[item.index]}`)
+    setPremium(`$${premiums[item.index]}`)
   }
 
   return (
