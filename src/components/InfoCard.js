@@ -13,6 +13,7 @@ const InfoCard = ({ data }) => {
 
   const [ percent, setPercent ] = useState(`${percentages[0]}%`)
   const [ premium, setPremium ] = useState(`$${premiums[0]}`)
+  const [ legend, setLegend ] = useState(labels)
 
   defaults.global.legend.position = 'left'
   defaults.global.legend.labels.usePointStyle = true
@@ -33,6 +34,16 @@ const InfoCard = ({ data }) => {
   const handleClick = (e, item) => {
     setPercent(`${percentages[item.index]}%`)
     setPremium(`$${premiums[item.index]}`)
+    
+    const updateLegend = legend.map(legendItem => {
+      if(item.text === legendItem) {
+        return `${legendItem} ⬅️`
+      } else {
+        return legendItem
+      }
+    })
+    
+    console.log(updateLegend)
   }
 
   return (
