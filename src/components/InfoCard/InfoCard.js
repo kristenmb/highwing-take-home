@@ -19,7 +19,7 @@ const InfoCard = ({ data }) => {
   defaults.global.legend.labels.usePointStyle = true
 
   const chartData = {
-    labels,
+    labels: legend,
     datasets: [{
       data: dataPoints,
       backgroundColor: [
@@ -35,15 +35,14 @@ const InfoCard = ({ data }) => {
     setPercent(`${percentages[item.index]}%`)
     setPremium(`$${premiums[item.index]}`)
     
-    const updateLegend = legend.map(legendItem => {
-      if(item.text === legendItem) {
-        return `${legendItem} ⬅️`
+    const updateLegend = labels.map(labelItem => {
+      if(item.text === labelItem) {
+        return `♦︎ ${labelItem}`
       } else {
-        return legendItem
+        return labelItem
       }
     })
-    
-    console.log(updateLegend)
+    setLegend(updateLegend)
   }
 
   return (

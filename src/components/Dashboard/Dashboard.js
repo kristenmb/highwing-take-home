@@ -1,8 +1,8 @@
 import React from 'react'
-import InfoCard from './InfoCard'
-import View from './View'
+import InfoCard from '../InfoCard/InfoCard'
+import View from '../View/View'
 import { useQuery } from '@apollo/client'
-import { BROKER_CARRIER_SLICE_QUERY } from '../queries'
+import { BROKER_CARRIER_SLICE_QUERY } from '../../queries'
 import './Dashboard.css'
 
 

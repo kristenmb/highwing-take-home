@@ -1,8 +1,8 @@
 import React from 'react'
 import { useQuery } from '@apollo/client'
-import { BROKER_QUERY } from '../queries'
-import arrow from '../Back arrow.svg'
-import bell from '../bell-icon.png'
+import { BROKER_QUERY } from '../../queries'
+import arrow from '../../Back arrow.svg'
+import bell from '../../bell-icon.png'
 import './Header.css'
 
 const Header = () => {

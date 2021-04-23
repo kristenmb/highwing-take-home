@@ -1,7 +1,7 @@
 import React from 'react'
-import Dashboard from './Dashboard'
-import Header from './Header'
-import Nav from './Nav'
+import Dashboard from '../Dashboard/Dashboard'
+import Header from '../Header/Header'
+import Nav from '../Nav/Nav'
 import './App.css';
 
 function App() {
